@@ -1,6 +1,6 @@
 -- defines a factorial function
     function fact (n)
-        if n == 0 then
+        if n <= 0 then
           return 1
         else
           return n * fact(n-1)
@@ -9,5 +9,7 @@
       
       print("enter a number:")
       a = io.read("*number")        -- read a number
-      print(fact(a))
+      b = fact                      -- assign a function to a variable...
+      c = print
+      c(b(a))
       
