@@ -5,16 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "launch",
-            "type": "lua",
+            "type": "lrdb",
             "request": "launch",
-            "stopOnEntry": true,
-            "program": "${workspaceRoot}/fact.lua",
-            "cwd": "${workspaceRoot}",
-            "path": "${workspaceRoot}/?.lua",
-            "cpath": "${workspaceRoot}/?.dll",
-            "arg": [],
-            "console": "utf8"
+            "name": "Lua Launch",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": true
         },
         {
             "name": "attach",
