@@ -1,4 +1,4 @@
-arVal = {123,10,6,1,-2,7,8,5,33,9,23,12,76,8,2}
+arVal = {123,98,6,1,-2,7,8,5,-33,9,23,12,76,8,2,27,36,10,56,34}
 
 ---[[  
     --print("--")
@@ -13,7 +13,7 @@ while gap >=1 do
     for i=gap,#arVal-1 do
         -- 2. innere Schleife tauscht Wert bis nach links durch... 
         for j=i-gap+1,1,-gap do
-            -- print(gap, i, j, j+gap, arVal[j], arVal[j+gap])
+            --print(gap, i, j, j+gap, arVal[j], arVal[j+gap])
             -- tauschen, wenn linker Wert größer als rechter Wert
             if arVal[j] > arVal[j+gap] then
                 temp = arVal[j]
@@ -35,7 +35,7 @@ while gap >=1 do
 end
 
 ---[[  
-    print("=")
+    print("shell sorted")
     for k=1,#arVal do
         io.write(arVal[k]," ")
     end
