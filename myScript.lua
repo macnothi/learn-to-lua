@@ -1,5 +1,5 @@
 -- Hallo Welt
-print("Hello World")
+print("Gib mal eine Zahl ein:")
 
 print(3+14)
 
