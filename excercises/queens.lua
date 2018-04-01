@@ -1,6 +1,6 @@
 -- eight queens problem
 N=8 -- board size N x N, number of queens
-SOLUTIONS=0 -- found solutions
+S=0 -- found S
 
 -- check if selected position is free to go
 function isPlaceOK(a, n, c)
@@ -25,9 +25,9 @@ end
 
 -- add all queens n..N to the board a
 function addQueen(a,n)
-    if (n > N) then -- and (SOLUTIONS < 1) then
+    if (n > N) then -- and (S < 1) then
         printSolution(a)
-        SOLUTIONS=SOLUTIONS+1
+        S=S+1
     else
         for c=1,N do
             if isPlaceOK(a,n,c) then
@@ -40,4 +40,4 @@ end
 
 -- add queens starting from 1
 addQueen({},1)
-print("Solutions =",SOLUTIONS)
+print("S =",S)
