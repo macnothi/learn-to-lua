@@ -40,4 +40,4 @@ end
 
 -- add queens starting from 1
 addQueen({},1)
-print("S =",S)
+print("Solutions =",S)
