@@ -1,4 +1,4 @@
--- eight queens problem
+-- eight queens problem, test all permutations version
 N=8 -- board size N x N, number of queens
 S=0 -- found S
 P=0 -- test place calls
