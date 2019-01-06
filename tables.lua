@@ -1,6 +1,6 @@
 -- table datentyp
 
-t = {} -- leere tabelle
+local t = {} -- leere tabelle
 
 table.insert( t, 'Karin' )
 table.insert( t, "Jens" )
