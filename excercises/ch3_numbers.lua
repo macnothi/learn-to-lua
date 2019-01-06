@@ -8,3 +8,11 @@
 for i=1,10 do
     print(i, i % 3)
 end
+
+function coneVolume(h,b)
+    -- h cone height
+    -- b angle beta
+    local volume=(math.pi/3)*(h^3)/(math.tan(math.pi/2-b/(2*math.pi)))
+    return volume
+end
+
