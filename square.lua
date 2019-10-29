@@ -13,7 +13,7 @@ function square(iteratorMaxCount,currentNumber)
     return square,iteratorMaxCount,0
  end  
  
- for i,n in squares(3)
+ for i,n in squares(5)
  do 
     print(i,n)
  end
