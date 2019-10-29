@@ -40,8 +40,10 @@ print(ledBrightness.LOW, table.unpack(ledColor.GREEN))
 
 temp={}
 for k,v in ipairs(ledOut) do
-    temp=table.concat(v)
+    for l,m in ipairs(v) do
+        table.insert( temp, m)
+    end
 end
-print(string.char(table.unpack(ledOut)))
-
+print(table.unpack(temp))
+print( string.char( table.unpack(temp) ))
 
